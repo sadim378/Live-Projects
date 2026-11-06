@@ -1,0 +1,7 @@
+canteen.db
+canteen.db-wal
+canteen.db-shm
+uploads/*
+!uploads/.gitkeep
+__pycache__/
+.DS_Store

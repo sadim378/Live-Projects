@@ -1,0 +1,22 @@
+[
+  {"id":"rice","name":"Boiled Rice","price":20,"category":"Meals","image":"bhaat.jpg","tag":"Everyday staple"},
+  {"id":"fried_rice","name":"Fried Rice","price":60,"category":"Meals","image":"fried-rice.jpg","tag":"Student favorite"},
+  {"id":"polao","name":"Polao","price":60,"category":"Meals","image":"polao.jpg","tag":"Classic comfort"},
+  {"id":"khichuri","name":"Bhuna Khichuri","price":40,"category":"Meals","image":"vuna-khicuri.jpg","tag":"Comfort bowl"},
+  {"id":"porota","name":"Porota","price":10,"category":"Breakfast","image":"porota.jpg","tag":"Morning classic"},
+  {"id":"daal_bhaji","name":"Daal-Bhaji","price":20,"category":"Breakfast","image":"daal-vaji.jpg","tag":"Budget friendly"},
+  {"id":"egg_fry","name":"Egg Fry","price":15,"category":"Breakfast","image":"egg-fry.jpg","tag":"Fresh & filling"},
+  {"id":"daal","name":"Daal","price":20,"category":"Meals","image":"daal.jpg","tag":"Homestyle flavor"},
+  {"id":"mixed_veg","name":"Mixed Vegetables","price":20,"category":"Meals","image":"mix-veg.jpg","tag":"Veggie pick"},
+  {"id":"rui","name":"Rui Fish Curry","price":30,"category":"Meals","image":"rui-curry.jpg","tag":"Bangladeshi favorite"},
+  {"id":"egg_curry","name":"Egg Curry","price":20,"category":"Meals","image":"egg-curry.jpg","tag":"Homestyle curry"},
+  {"id":"chicken_curry","name":"Chicken Curry","price":60,"category":"Chicken","image":"chichen-curry.jpg","tag":"Popular plate"},
+  {"id":"fried_chicken","name":"Fried Chicken","price":60,"category":"Chicken","image":"frychicken.jpg","tag":"Crispy bite"},
+  {"id":"chicken_manchurian","name":"Chicken Manchurian","price":60,"category":"Chicken","image":"chicken-chili.jpg","tag":"Spicy favorite"},
+  {"id":"chicken_roast","name":"Chicken Roast","price":60,"category":"Chicken","image":"roast-chicken.jpg","tag":"Hearty choice"},
+  {"id":"alur_chop","name":"Alur Chop","price":10,"category":"Snacks","image":"alur-chop.jpg","tag":"Quick snack"},
+  {"id":"singara","name":"Singara","price":10,"category":"Snacks","image":"singara.jpg","tag":"Canteen classic"},
+  {"id":"chicken_roll","name":"Chicken Roll","price":30,"category":"Snacks","image":"chicken-role.jpg","tag":"Grab & go"},
+  {"id":"chicken_puli","name":"Chicken Puli","price":30,"category":"Snacks","image":"chicken-puli.jpg","tag":"Tasty bites"},
+  {"id":"puri","name":"Puri","price":10,"category":"Breakfast","image":"puri.jpg","tag":"Golden & crispy"}
+]

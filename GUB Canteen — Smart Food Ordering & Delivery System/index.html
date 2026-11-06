@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f30">
+  <meta name="description" content="GUB Canteen — canteen-price meals delivered across campus by fellow students. Order food or earn by delivering on your way to class.">
+  <title>GUB Canteen — From Canteen to Classroom</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <svg class="svg-symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 11h7l-1 9 10-12h-7V2Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-scooter" viewBox="0 0 24 24"><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M8 18h5l3-7h-5l-2-4H6M16 11l-2-4h4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3 8 8 11 5-3 8-6 8-11V5L12 2Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  </svg>
+  <div class="announcement"><div class="shell announcement-inner"><span><span class="pulse-dot"></span> Made for Green University students</span><span class="announcement-right">Good food. Less walking. More time for class. <span aria-hidden="true">↗</span></span></div></div>
+  <header class="site-header" id="top">
+    <nav class="shell navbar" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="GUB Canteen home"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 20h22M8 20a8 8 0 0 1 16 0M16 12v-3M11 25h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span><span>GUB<span class="brand-thin">CANTEEN</span><small>Campus food, simplified.</small></span></a>
+      <div class="desktop-nav"><a href="#menu">Explore Menu</a><a href="#how-it-works">How It Works</a><a href="#earn">Deliver & Earn</a><button type="button" id="navOrders">My Orders</button><a href="admin.html" class="admin-portal-link">Owner / Admin</a></div>
+      <div class="nav-actions"><button class="text-button account-btn" id="accountBtn"><svg class="icon"><use href="#i-user"/></svg><span id="accountLabel">Sign in</span></button><button class="bag-button" id="cartBtn" aria-label="Open shopping cart"><svg class="icon"><use href="#i-bag"/></svg><span id="cartCount" class="cart-count">0</span></button><button class="hamburger" id="menuToggle" aria-label="Open mobile menu" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button></div>
+    </nav>
+    <div id="mobileNav" class="mobile-nav" hidden><a href="#menu">Explore Menu</a><a href="#how-it-works">How It Works</a><a href="#earn">Deliver & Earn</a><button id="mobileOrders">My Orders</button><a href="admin.html">Owner / Admin</a></div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="shell hero-grid">
+        <div class="hero-content animate-enter">
+          <div class="eyebrow"><span class="eyebrow-line"></span> THE SMARTER WAY TO EAT ON CAMPUS</div>
+          <h1>Hungry in class?<br><span class="highlight-word">We've got</span> your<br>next break.</h1>
+          <p class="hero-description">Your favorite GUB canteen meals, at canteen prices. Delivered to your building by students already heading your way.</p>
+          <div class="hero-buttons"><a class="btn btn-primary" href="#menu">Order your meal <svg class="icon"><use href="#i-arrow"/></svg></a><button class="btn btn-soft" id="heroEarn">Earn as a student <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+          <div class="hero-proof"><div class="avatar-stack"><span>G</span><span>U</span><span>B</span></div><div><strong>Built around student life</strong><small>Less walking between NX and Main Building</small></div></div>
+        </div>
+        <div class="hero-visual animate-enter delay-2" aria-label="Food and student delivery illustration">
+          <div class="hero-art-circle"></div><div class="doodle doodle-1">✳</div><div class="doodle doodle-2">✺</div>
+          <div class="hero-food-photo"><img src="images/lunch.jpg" alt="Rice and curries served on a plate" /></div>
+          <div class="floating-pill floating-pill-one"><span class="floating-icon">✦</span><div><strong>Same canteen price</strong><small>No food markup</small></div></div>
+          <div class="floating-pill floating-pill-two"><span class="floating-icon amber">৳</span><div><strong>Delivery from ৳15</strong><small>Student-to-student</small></div></div>
+          <div class="hero-stamp"><span>FRESH<br><b>FOOD</b></span><span class="stamp-star">✳</span></div>
+        </div>
+      </div>
+      <div class="shell hero-bottom"><span>SCROLL TO DISCOVER <span class="down-arrow">↓</span></span><span>GUB CAMPUS <span class="small-sep">•</span> STUDENT POWERED</span></div>
+    </section>
+
+    <section class="benefits-bar"><div class="shell benefits-grid"><div><span class="benefit-icon">✳</span><p><strong>Canteen prices</strong><small>Pay what you pay on campus</small></p></div><div><span class="benefit-icon">⌁</span><p><strong>From just ৳15</strong><small>Simple, quantity-based delivery</small></p></div><div><span class="benefit-icon">↗</span><p><strong>Delivered by students</strong><small>Earn money on your way</small></p></div></div></section>
+
+    <section class="menu-section section-space" id="menu">
+      <div class="shell">
+        <div class="section-heading reveal"><div><span class="section-kicker"><span class="tiny-circle"></span> WHAT'S COOKING?</span><h2>Your next favorite<br><em>canteen meal.</em></h2><p>Made for busy mornings, short breaks, and everything in between.</p></div><div class="menu-intro-note"><span>✶</span><p>Choose it. Add it.<br>We'll bring it closer.</p></div></div>
+        <div class="menu-tools"><div class="category-filters" id="categoryFilters" aria-label="Filter menu"><button class="category-chip active" data-category="All">All items</button><button class="category-chip" data-category="Meals">Meals</button><button class="category-chip" data-category="Breakfast">Breakfast</button><button class="category-chip" data-category="Chicken">Chicken</button><button class="category-chip" data-category="Snacks">Snacks</button></div><label class="search-box"><svg class="icon"><use href="#i-search"/></svg><input type="search" id="menuSearch" placeholder="Search food..." aria-label="Search food"></label></div>
+        <div class="food-grid" id="foodGrid" aria-live="polite"></div>
+        <p class="menu-disclaimer">* Prices are carried over from the original project menu for demonstration and should be confirmed with the GUB canteen before launch. Admin-added items and prices must also be verified.</p>
+      </div>
+    </section>
+
+    <section class="process-section section-space" id="how-it-works"><div class="shell"><div class="section-heading center reveal"><span class="section-kicker"><span class="tiny-circle"></span> EASY AS 1, 2, 3</span><h2>From canteen to<br><em>classroom.</em></h2><p>No long walks in the heat. Just food when you need it.</p></div><div class="steps-grid"><article class="step-card reveal"><div class="step-visual step-visual-a"><img src="images/easy-to-order.jpg" alt="Ordering food on a mobile device"><span class="step-number">01</span></div><h3>Choose what you love</h3><p>Browse real canteen favorites and build your order in a few taps.</p></article><article class="step-card reveal"><div class="step-visual step-visual-b"><img src="images/fast-delivary.png" alt="Fast student delivery symbol"><span class="step-number">02</span></div><h3>A student accepts</h3><p>Someone already near the canteen can pick up your order on their way.</p></article><article class="step-card reveal"><div class="step-visual step-visual-c"><img src="images/lunch.jpg" alt="Freshly prepared canteen lunch"><span class="step-number">03</span></div><h3>Enjoy it at your building</h3><p>Track the journey and get your meal at your chosen campus meeting point.</p></article></div></div></section>
+
+    <section class="earn-section section-space" id="earn"><div class="shell earn-grid"><div class="earn-visual reveal"><div class="earn-orbit orbit-one"></div><div class="earn-orbit orbit-two"></div><img class="courier-image" src="images/delivery-boy.png" alt="Smiling student delivery partner holding food"/><div class="earn-floating"><span>↗</span><div><strong>Earn at least ৳10</strong><small>on a ৳15 delivery</small></div></div></div><div class="earn-copy reveal"><span class="section-kicker light"><span class="tiny-circle"></span> FOR STUDENTS, BY STUDENTS</span><h2>Going that way?<br><em>Make it pay.</em></h2><p>Finished class at NX and heading toward Main Building? Accept a nearby order, pick up the food, and earn while you're already on the move.</p><div class="earn-points"><div><span>01</span>Browse open campus deliveries</div><div><span>02</span>Accept a pickup that fits your route</div><div><span>03</span>Mark pickup and delivery as complete</div></div><button class="btn btn-light" id="openJobsBtn">Explore delivery jobs <svg class="icon"><use href="#i-arrow"/></svg></button><p class="earn-note">Any registered student can order and deliver. No fixed rider job required.</p></div></div></section>
+
+    <section class="pricing-section section-space" id="pricing"><div class="shell pricing-grid"><div class="pricing-copy reveal"><span class="section-kicker"><span class="tiny-circle"></span> SIMPLE & TRANSPARENT</span><h2>Fair for you.<br><em>Fair for students.</em></h2><p>Food stays at the listed canteen price. Delivery fees change with total item quantity, starting at only ৳15.</p><div class="fair-note"><svg class="icon"><use href="#i-shield"/></svg><p><span id="pricingSplit">From a ৳15 delivery fee, ৳5 goes to the platform and ৳10 to the student rider.</span></p></div></div><div class="pricing-card reveal"><div class="pricing-card-top"><span>DELIVERY FEE EXAMPLE</span><span>✳ NO HIDDEN FOOD MARKUP</span></div><div id="pricingTiers"></div><div class="pricing-card-footer" id="pricingFooter">Delivery revenue follows the same percentage at every quantity tier.</div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-main"><div><a class="brand footer-brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none"><path d="M5 20h22M8 20a8 8 0 0 1 16 0M16 12v-3M11 25h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span><span>GUB<span class="brand-thin">CANTEEN</span><small>Campus food, simplified.</small></span></a><p>Making those long walks to the canteen a little less necessary.</p></div><div class="footer-links"><div><h4>Explore</h4><a href="#menu">Food menu</a><a href="#how-it-works">How it works</a><a href="#pricing">Delivery fees</a></div><div><h4>Get involved</h4><button id="footerJobs">Deliver & earn</button><button id="footerOrders">My orders</button><button id="footerAccount">Student account</button><a href="admin.html">Admin dashboard</a></div></div></div><div class="shell footer-bottom"><span>© <span id="year"></span> GUB Canteen. Student project prototype.</span><span>Not an official Green University service or a live payment platform.</span></div></footer>
+
+  <div id="backdrop" class="backdrop" hidden></div>
+  <aside id="cartDrawer" class="drawer" role="dialog" aria-label="Shopping cart" aria-modal="true" aria-hidden="true"><div class="panel-heading"><div><span class="panel-kicker">YOUR SELECTION</span><h2>Your food bag <span id="drawerCount" class="subtle-count">(0)</span></h2></div><button class="close-btn" data-close aria-label="Close cart"><svg class="icon"><use href="#i-x"/></svg></button></div><div class="cart-body" id="cartBody"></div><div class="cart-summary" id="cartSummary"></div></aside>
+  <section id="ordersDrawer" class="drawer wide-drawer" role="dialog" aria-label="My orders" aria-modal="true" aria-hidden="true"><div class="panel-heading"><div><span class="panel-kicker">STAY IN THE LOOP</span><h2>My orders</h2></div><button class="close-btn" data-close aria-label="Close orders"><svg class="icon"><use href="#i-x"/></svg></button></div><div id="ordersBody" class="drawer-scroll"></div></section>
+  <section id="jobsDrawer" class="drawer wide-drawer" role="dialog" aria-label="Student delivery jobs" aria-modal="true" aria-hidden="true"><div class="panel-heading"><div><span class="panel-kicker">STUDENT SIDE HUSTLE</span><h2>Deliver & earn</h2></div><button class="close-btn" data-close aria-label="Close jobs"><svg class="icon"><use href="#i-x"/></svg></button></div><div id="jobsBody" class="drawer-scroll"></div></section>
+  <section id="authModal" class="modal-shell" role="dialog" aria-label="Student account" aria-modal="true" aria-hidden="true"><div class="auth-modal"><div class="panel-heading"><div><span class="panel-kicker">GUB STUDENT SPACE</span><h2 id="authTitle">Welcome back</h2></div><button class="close-btn" data-close aria-label="Close sign in"><svg class="icon"><use href="#i-x"/></svg></button></div><div id="authBody"></div></div></section>
+  <section id="checkoutModal" class="modal-shell" role="dialog" aria-label="Checkout" aria-modal="true" aria-hidden="true"><div class="checkout-modal"><div class="panel-heading"><div><span class="panel-kicker">ALMOST THERE</span><h2>Where should we meet you?</h2></div><button class="close-btn" data-close aria-label="Close checkout"><svg class="icon"><use href="#i-x"/></svg></button></div><form id="checkoutForm" class="checkout-form"><label>Campus building<select name="building" required><option value="Main Building">Main Building</option><option value="NX Building">NX Building</option><option value="Other GUB Campus Building">Other GUB Campus Building</option></select></label><div class="form-row"><label>Floor<select name="floor" required><option value="G">Ground floor</option><option value="1">1st floor</option><option value="2">2nd floor</option><option value="3">3rd floor</option><option value="4">4th floor</option><option value="5">5th floor</option><option value="6" selected>6th floor</option><option value="7">7th floor</option><option value="8">8th floor</option><option value="9">9th floor</option><option value="10">10th floor</option><option value="11">11th floor</option><option value="12">12th floor</option></select></label><label>Room / meeting point<input name="room" maxlength="40" placeholder="e.g. Room 602 / lobby" required autocomplete="off"></label></div><label>Instructions <span class="optional">(optional)</span><textarea name="notes" maxlength="250" rows="3" placeholder="e.g. I'll wait near the lift..."></textarea></label><div class="payment-info"><svg class="icon"><use href="#i-bag"/></svg><div><strong>Cash on delivery — prototype</strong><small>Actual payment collection and canteen settlement are not integrated. Please coordinate payment with the canteen.</small></div></div><div id="checkoutTotal"></div><button type="submit" class="btn btn-primary submit-order" id="placeOrderBtn">Place order <svg class="icon"><use href="#i-arrow"/></svg></button></form></div></section>
+  <div id="toastStack" class="toast-stack" role="status" aria-live="polite"></div>
+</body>
+</html>

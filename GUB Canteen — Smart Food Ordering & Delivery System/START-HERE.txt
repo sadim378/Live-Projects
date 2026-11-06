@@ -1,0 +1,25 @@
+GUB CANTEEN — UPDATED VERSION WITH OWNER / ADMIN DASHBOARD
+
+1) Extract this ZIP. The server.py file is directly inside the extracted folder.
+2) Open that folder in VS Code.
+3) Terminal: python server.py --create-owner   (FIRST TIME ONLY)
+   Set your own owner login and 12+ character password.
+4) Terminal: python server.py
+5) Student site:    http://127.0.0.1:8000/
+   Owner dashboard: http://127.0.0.1:8000/admin.html
+
+OR double-click 01-CREATE-OWNER.bat once, then 02-START-SERVER.bat.
+
+Beverages, Cakes & Biscuits are preloaded as HIDDEN DRAFTS.
+Open Admin > Menu Manager to confirm real prices, add photos and enable.
+
+Commission is 33.3333% of DELIVERY FEE, NOT the food subtotal.
+Fee 15tk -> site 5tk / rider 10tk
+Fee 20tk -> site 7tk / rider 13tk
+Fee 25tk -> site 8tk / rider 17tk
+Fee 30tk -> site 10tk / rider 20tk
+
+If you already have a previous canteen.db, BACK IT UP AND COPY IT
+INTO THIS FOLDER BEFORE FIRST START. The database is upgraded automatically.
+
+Read README.md for features, limits and production safety notes.
